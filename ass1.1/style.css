@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    font-size: xx-large;
+    font-weight: bold;
+    letter-spacing: .2px;
+}
+
+div {
+    background-color: #eee;
+    width: 600px;
+    height: 100px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    border-left: 5px solid #d35400;
+    border-right: 5px solid #8e44ad;
+}
+
+div::first-letter {
+    color: #d35400;
+}
+
+div::before {
+    content: "";
+    height: 5px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: linear-gradient(to right,
+            #d35400 20%,
+            #2980b9 20%,
+            #2980b9 40%,
+            #4caf50 40%,
+            #4caf50 60%,
+            #e91e63 60%,
+            #e91e63 80%,
+            #8e44ad 80%);
+
+}
+
+div::after {
+    content: "";
+    height: 5px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: linear-gradient(to right,
+            #d35400 20%,
+            #2980b9 20%,
+            #2980b9 40%,
+            #4caf50 40%,
+            #4caf50 60%,
+            #e91e63 60%,
+            #e91e63 80%,
+            #8e44ad 80%);
+
+}
